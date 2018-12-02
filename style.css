@@ -170,16 +170,16 @@ notebook/pc:
     .doporucujeme {
         display: flex;
         min-height: 400px;
-        width:100%
+        max-width:100%;
 
     }
     .hlavni-recept {
         border-right-color: white;
         border-right-style: solid;
         border-right-width: 0.5px;
+        width: calc(100% /3);
         
     }
-
     .recept3 {
         border-right-color: white;
         border-right-style: solid;
@@ -187,8 +187,13 @@ notebook/pc:
         
     }
 
+    .recept4 {
+        border-right: none;
+    }
+
     .sloupec {
         display: flex;
+        flex: 1;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
@@ -199,5 +204,6 @@ notebook/pc:
 
         min-height: 200px;
         width: auto;
+        background-size: 100%;
     }
 }
